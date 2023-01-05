@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        {% include "head.njk" %}
+    </head>
+    <body>
+        <h1>Torcellini Stuff</h1>
+        <main>
+            <p>We are the Torcellinis.</p>
+            <section id="websites">
+                {% for site in websites %}
+                <li><article>
+                    <h1>{{site.name}}</h1>
+                    <p>{{ site.description }}</p>
+                    {% if site.feed %}
+                        {% feed site.feed %}
+                    {% endif %}
+                </li></article>
+                {% endfor %}
+            </section>
+        </main>
+    </body>
+</html>
+                
