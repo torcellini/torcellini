@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         {% include "head.njk" %}
     </head>
@@ -15,9 +15,9 @@
                     {% if site.feed %}
                         {% feed site.feed, 3 %}
                     {% endif %}
-                </ul></article>
+                </li></article>
                 {% endfor %}
-            </section>
+            </ul></section>
         </main>
     </body>
 </html>
