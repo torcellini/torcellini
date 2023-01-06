@@ -7,7 +7,7 @@
         <h1>Torcellini Stuff</h1>
         <main>
             <p>This website is still under construction, but perhaps one of these other sites will be interesting!</p>
-            <section id="websites">
+            <section id="websites"><ul>
                 {% for site in websites %}
                 <li><article>
                     <h2><a href="{{site.url}}">{{site.name}}</a></h2>
@@ -15,7 +15,7 @@
                     {% if site.feed %}
                         {% feed site.feed, 3 %}
                     {% endif %}
-                </li></article>
+                </ul></article>
                 {% endfor %}
             </section>
         </main>

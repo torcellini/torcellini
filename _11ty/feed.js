@@ -19,7 +19,7 @@ module.exports = async function(url, number) {
     let html = '<h3>Latest</h3><ol>';
     let array = feed.items.sort(compareDate);
     array.slice(0, number).forEach(function(entry) {
-        html = html + `<li><a href="${entry.link}">${entry.title}&nbsp;${readableDate(entry.isoDate)}</a>`;
+        html = html + `<li><a href="${entry.link}">${entry.title}&nbsp;${readableDate(entry.isoDate)}</a></li>`;
     })
     html = html + "</ol>"
     return html;
