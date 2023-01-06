@@ -2,6 +2,22 @@
     {
         "name": "Micah Torcellini's Website",
         "url": "https://micah.torcellini.org",
-        "feed": "https://micah.torcellini.org/feed.xml" 
+        "feed": "https://micah.torcellini.org/feed.xml",
+        "description": "Micah Torcellini's musings."
+    },
+    {
+        "name": "Isaac Torcellini's Website",
+        "url": "https://isaac.torcellini.org"
+    },
+    { 
+        "name": "Scramble the Duck",
+        "url": "https://scrambletheduck.org",
+        "feed": "https://scrambletheduck.org/feed.xml",
+        "description": "Scramble is a completely accurate weather-predicting duck in Eastford, Connecticut."
+    },
+    {
+        "name": "Eastford Farm",
+        "url": "https://www.eastfordfarm.com/",
+        "description": "Eastford Farm is a family-owned farm in Eastford, Connecticut focused on bringing the highest quality food at a reasonable price."
     }
 ]

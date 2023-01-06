@@ -6,11 +6,11 @@
     <body>
         <h1>Torcellini Stuff</h1>
         <main>
-            <p>We are the Torcellinis.</p>
+            <p>This website is still under construction, but the sites below are filled with interesting content!</p>
             <section id="websites">
                 {% for site in websites %}
                 <li><article>
-                    <h1>{{site.name}}</h1>
+                    <h2><a href="{{site.url}}">{{site.name}}</a></h2>
                     <p>{{ site.description }}</p>
                     {% if site.feed %}
                         {% feed site.feed %}

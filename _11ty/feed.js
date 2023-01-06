@@ -4,10 +4,11 @@ let parser = new Parser();
 // generate a new array sorted by date before looping, so the posts are in the right order
 module.exports = async function(url) {
     let feed = await parser.parseURL(url);
-    let html = '<h3>Latest</h3>'
+    let html = '<h3>Latest</h3><ol>'
     feed.items.forEach(function(entry) {
         html = html + `<li><a href="${entry.link}">${entry.title}&nbsp;${entry.pubDate}</a>`;
     })
+    html = html + "</ol>"
     return html;
 }
 // fetch url
