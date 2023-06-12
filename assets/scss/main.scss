@@ -1,0 +1,65 @@
+@import "normalize"; 
+
+@mixin font($size) {
+    $factor: 9;
+    font-size: $size * 1em;
+    font-variation-settings: "opsz" $size * $factor;
+}
+
+@font-face {
+    font-family: "Bodoni Moda";
+    src: url("/assets/fonts/bodonimoda.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "Bodoni Moda";
+    src: url("/assets/fonts/bodonimodaitalic.woff2") format("woff2");
+    font-style: italic;
+    font-display: swap;
+  }
+
+:root {
+    --font-family: "Bodoni Moda", Bodoni, serif;
+    --background-color: hsl(30, 39%, 91%);
+    --text-color: hsl(30, 39%, 14%);
+}
+
+
+// Text Styling
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    @include font(1);
+}
+
+h1 {
+    @include font(4);
+}
+
+h2 {
+    @include font(2);
+}
+
+h3 {
+    @include font(1.5);
+}
+
+#websites li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+// layout
+
+body {
+    max-width: 70rem;
+    margin: 1em auto;
+    padding: 1em;
+}
